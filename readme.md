@@ -8,3 +8,6 @@ Download and open the following files to view presentations in your browser.
 - [Data manipulation tutorial](data_manipulation.html)
 - [ggplot2 tutorial](ggplot_tutorial.html)
 
+## Code
+- [Data manipulation tutorial](data_manipulation.R)
+- [ggplot2 tutorial](ggplot_tutorial.R)
