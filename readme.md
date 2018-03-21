@@ -9,5 +9,6 @@ Download and open the following files to view presentations in your browser.
 - [ggplot2 tutorial](ggplot_tutorial.html)
 
 ## Code
+- [Generating fake data from "ez" package](generating data.R)
 - [Data manipulation tutorial](data_manipulation.R)
 - [ggplot2 tutorial](ggplot_tutorial.R)
