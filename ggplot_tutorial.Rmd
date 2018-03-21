@@ -6,13 +6,13 @@ date: "3/18/2018"
 output: 
   ioslides_presentation:
     widescreen: true
-    css: style.css
+    css: styles/style.css
 smaller: true
 ---
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = TRUE)
+knitr::opts_chunk$set(echo = TRUE, cache = TRUE)
 ```
 
 ## Data Visualization 101 | A good graph is like a good joke
@@ -23,7 +23,7 @@ knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = TRUE)
 * It boils down to communication--make sure your graph conveys the relevant information in a digestable way
 
 <div align="center">
-<img src="lol-man.jpg" height=200>
+<img src="images/lol-man.jpg" height=200>
 </div>
   
 ## ggplot2
@@ -47,7 +47,7 @@ knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = TRUE)
     + A position adjustment (**position = **)
 
 <div align="center">
-<img src="shrek.jpg" height=200>
+<img src="images/shrek.jpg" height=200>
 </div>
     
 ## (1) The Dataset
@@ -56,8 +56,8 @@ knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = TRUE)
 library(ggplot2)
 library(dplyr)
 
-df = read.csv("output/allANT.csv")
-df_run = read.csv("ANT_runsheet.csv")
+df = read.csv("data/allANT.csv")
+df_run = read.csv("data/ANT_runsheet.csv")
 ```
 
 - We can use dplyr to read dataset into ggplot function!
@@ -122,11 +122,11 @@ plot1 = df_run %>% ggplot(aes(age)) +
 
 ## Common Geoms {.flexbox .vcenter}
 
-![](univar.png){ width=30% }
+![](images/univar.png){ width=30% }
 
 ## Common Geoms {.flexbox .vcenter}
 
-![](bivar.png){ width=30% }
+![](images/bivar.png){ width=30% }
 
 ##Adding geom to call
 
@@ -269,7 +269,7 @@ df %>% ggplot(aes(correctRT)) +
 ## Aesthetic != Aesthetic
 
 <div class="columns-2">
-  ![](aesthetic.png)
+  ![](images/aesthetic.png)
 
   - If we want to make the plot more aesthetically pleasing, we do it **outside** of aes()
   
@@ -658,7 +658,7 @@ df.facet %>% ggplot(aes(flank, mean_correctRT, group = group)) +
 
 ## Changing Color Schemes
 
-![](colors.png){width=50%}
+![](images/colors.png){width=50%}
 
 ## Manual Fill {.smaller}
 
@@ -679,7 +679,7 @@ df.facet %>% ggplot(aes(flank, mean_correctRT, group = group)) +
 
 ## The Wes Anderson Color Palette{.flexbox .vcenter}
 
-![](wes.png)
+![](images/wes.png)
 
 ----
 
@@ -714,7 +714,7 @@ final_plot = df.facet %>% ggplot(aes(flank, mean_correctRT, group = group)) +
                      strip.text.x = element_text(size =14)) +
   scale_fill_manual(values=wes_palette(n=2, name="GrandBudapest"))
 
-ggsave("final_plot.png", final_plot)
+ggsave("output/final_plot.png", final_plot)
 ```
 
 
