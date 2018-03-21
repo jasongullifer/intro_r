@@ -56,7 +56,7 @@ knitr::opts_chunk$set(echo = TRUE, tidy = TRUE, cache = TRUE)
 library(ggplot2)
 library(dplyr)
 
-df = read.csv("allANT.csv")
+df = read.csv("output/allANT.csv")
 df_run = read.csv("ANT_runsheet.csv")
 ```
 
