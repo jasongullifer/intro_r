@@ -10,7 +10,7 @@ Download and open the following files to view presentations in your browser.
 
 ## Code
 
-- [Generating fake data](generating data.R)
+- [Generating fake data](generating_data.R)
 
 - [Data manipulation tutorial](data_manipulation.R)
 
