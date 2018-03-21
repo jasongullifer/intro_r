@@ -1,4 +1,4 @@
-# Introduciton to R
+# Introduction to R
 
 Mehrgol Tiv & Jason Gullifer
 
