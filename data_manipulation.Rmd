@@ -1,13 +1,14 @@
 ---
 title: "Introduction to R Workshop"
-subtitle:  "Working with data"
 author: "Jason W. Gullifer"
 date: '2018-03-16'
-output: 
+output:
+  slidy_presentation: default
   ioslides_presentation:
-    widescreen: true
-    smaller: true
+    widescreen: yes
+    smaller: yes
     css: styles/style.css
+subtitle: Working with data
 ---
 
 <style>
